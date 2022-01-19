@@ -1,0 +1,16 @@
+{
+  "name": "ViktorAudenciaTest",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ viktor-settlemint/ViktorAudenciaTest",
+    "create-local": "graph create --node http://localhost:8020/ viktor-settlemint/ViktorAudenciaTest",
+    "remove-local": "graph remove --node http://localhost:8020/ viktor-settlemint/ViktorAudenciaTest",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 viktor-settlemint/ViktorAudenciaTest"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.25.3",
+    "@graphprotocol/graph-ts": "0.24.1"
+  }
+}
